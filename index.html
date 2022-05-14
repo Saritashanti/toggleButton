@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model</title>
+  </head>
+
+  <body>
+    <button>Open</button>
+    <div
+      id="open"
+      style="
+        background-color: lightcyan;
+        width: 70%;
+        height: 50vh;
+        border: 1px solid;
+        display: none;
+      "
+    >
+      <button id="close" style="float: right">X</button>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quod
+        fugiat ab non explicabo tempora vitae, fugit saepe in reiciendis sit
+        unde? Sunt iste animi illum. At, harum. Officia blanditiis voluptatem
+        sint ducimus necessitatibus, et facilis numquam ad commodi iusto cum
+        ipsam accusamus distinctio vel minima assumenda vitae consequuntur ab
+        nihil impedit corrupti. Ipsum nemo ipsa ut quidem magni, itaque incidunt
+        sed, et tempora deserunt velit ipsam temporibus esse quaerat laborum
+        aliquam dicta necessitatibus illo quam! Numquam reprehenderit nobis
+        provident!
+      </p>
+    </div>
+  </body>
+  <script>
+    document.getElementsByTagName("button")[0].addEventListener("click", () => {
+      document.getElementById("open").style.display = "block";
+    });
+    document.getElementsByTagName("button")[1].addEventListener("click", () => {
+      document.getElementById("open").style.display = "none";
+    });
+  </script>
+</html>
